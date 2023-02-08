@@ -8,8 +8,9 @@
 
 int main(void)
 {
-	char name[30];
+	char man[20];
+	int age;
 
-	printf("Enter your name here...\n");
-	scanf("%s", name);
-	puts(name);
+	printf("Enter your name here!\n");
+	gets(man);
+	puts(man);

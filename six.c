@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char name1[10], name2[10], pres[10];
+	char name1[10], name2[10], pres[10], ask[10];
 	int age;
 
 	printf("Welcome to Masino's bot questioning session\nPlease tell me your name\n");
@@ -20,7 +20,7 @@ int main(void)
 	{
 		printf("Sorry this age is not existing in my database\n");
 	}
-	else if (age == 0 && age <= 25)
+	else if (age >= 0 && age <= 25)
 	{
 		printf("Wow you are pretty young\n");
 	}
@@ -34,8 +34,10 @@ int main(void)
 	}
 	printf("Tell me your favourite presidential candidate of 2023 Nigerian election\n");
 	scanf("%s", pres);
-	printf("%s Hmm...\nIf I may ask, why did you chose %s ?\n", pres, pres);
-	scanf("%s %s", name1, name2);
+	printf("Oh! Okay Cool.\nAsk me my choice\n");
+	scanf("%s", ask);
+	printf("Well, no doubt, Peter Obi is the right choice\nHe alone can fix Nigeria\nWanna talk about anything else?\n");
+	scanf("%s", ask);
 	printf("Okay I see!\nWell, thanks for your time.\nWe will continue next time.\n");
 	printf("This bot is developed by Masino\n");
 	return (0);

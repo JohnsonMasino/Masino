@@ -8,21 +8,21 @@
 
 int max(int, int);
 
-int main(int x, int y)
+int main(int m, int n)
 {
-	int a, b;
+	int x, y;
 
 	printf("Enter two numbers here:\n");
 	max(x, y);
 	return (0);
 }
 
-int max(int a, int b)
+int max(int x, int y)
 {
-	scanf("%d %d", &a, &b);
-	if (a > b)
-		printf("The bigger number is:\n%d\n", a);
+	scanf("%d %d", &x, &y);
+	if (x > y)
+		printf("The bigger number is:\n%d\n", x);
 	else
-		printf("The bigger number is:\n%d\n", b);
+		printf("The bigger number is:\n%d\n", y);
 	return (0);
 }

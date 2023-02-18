@@ -25,6 +25,7 @@ int avg(int mk[], int len)
 	{
 		sum = sum + mk[i];
 	}
+	printf("Sum is:\n%d\n", sum);
 	average = sum / len;
 	return (average);
 }

@@ -11,9 +11,10 @@ int str(char [], int);
 
 int main(void)
 {
-	char nm[] = "Masino";
+	char nm[10];
 	int length, len;
 
+	printf("Enter a name here:\n");
 	length = str(nm, len);
 	printf("The length is:\n%d\n", length);
 	printf("\nCode developed by Masino\n");
@@ -22,10 +23,11 @@ int main(void)
 
 int str(char name[], int a)
 {
-	char nm[] = "Masino";
+	char nm[10];
 	int i, len = 0;
 
 	//len = strlen(nm);
+	scanf("%s", nm);
 	for (i = 0; nm[i] != '\0'; i++)
 	{
 		len = len + 1;

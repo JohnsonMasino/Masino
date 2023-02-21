@@ -10,13 +10,14 @@ int sub(int, int);
 
 void main(void)
 {
-	int add;
+	int add = 0;
+	int (*ptr)(int, int);
 
-	add = sub(10, 5);
-	printf("The sum is:\n%d\n", add);
+	add = (*ptr)(10, 5);
+	printf("The addition is:\n%d\n", add);
 }
 
 int sub(int a, int b)
 {
-	return (a - b);
+	return (a + b);
 }
